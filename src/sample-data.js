@@ -238,15 +238,5 @@ export const calendarDays = [
     "image_alt_text": "The show poster The Chilling Adventures of Sabrina",
     "product_name": "The Chilling Adventures of Sabrina",
     "product_url": "https://www.netflix.com/title/80223989",
-  },
-  {
-    "id": 24,
-    "day_index": 24,
-    "day_has_started": false,
-    "day_checked": false,
-    "image_file_path": "https://via.placeholder.com/150",
-    "image_alt_text": "TV show poster Tales from the Crypt",
-    "product_name": "Tales from the Crypt",
-    "product_url": "https://www.amazon.com/Tales-Crypt-Season-1/dp/B00G11EIY6",
   }
 ]

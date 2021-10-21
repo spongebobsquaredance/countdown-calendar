@@ -1,4 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
+import styled from 'styled-components'
+
+const ListWrapper = styled.ul`
+  display: grid;
+  grid-column-gap: 8px;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (min-width: 1200px) {
+    grid-column-gap: 2%;
+    grid-template-columns: repeat(6, 1fr);
+  }
+`
 
 const DayList = ({ calendarDays }) => {
   const [cal_days_array, setDayChecked] = useState(calendarDays);
@@ -22,7 +39,7 @@ const DayList = ({ calendarDays }) => {
   }
 
   return (
-    <ul>
+    <ListWrapper>
       {calendarDays.map((calendarDay, index) => 
       <li 
         key={calendarDay.id.toString()}
@@ -38,7 +55,7 @@ const DayList = ({ calendarDays }) => {
           <a href={calendarDay.product_url}>{calendarDay.product_name}</a>
         </>}
       </li>)}
-    </ul>
+    </ListWrapper>
   )
 }
 
