@@ -1,7 +1,7 @@
 export const calendarDays = [
   {
     "id": 0,
-    "day_index": 0,
+    "day_index": 1,
     "day_has_started": true,
     "day_checked": false,
     "image_file_path": "https://via.placeholder.com/150",
@@ -11,7 +11,7 @@ export const calendarDays = [
   },
   {
     "id": 1,
-    "day_index": 1,
+    "day_index": 2,
     "day_has_started": false,
     "day_checked": false,
     "image_file_path": "https://via.placeholder.com/150",
@@ -21,7 +21,7 @@ export const calendarDays = [
   },
   {
     "id": 2,
-    "day_index": 2,
+    "day_index": 3,
     "day_has_started": false,
     "day_checked": false,
     "image_file_path": "https://via.placeholder.com/150",
@@ -31,7 +31,7 @@ export const calendarDays = [
   },
   {
     "id": 3,
-    "day_index": 3,
+    "day_index": 4,
     "day_has_started": false,
     "day_checked": false,
     "image_file_path": "https://via.placeholder.com/150",
@@ -41,7 +41,7 @@ export const calendarDays = [
   },
   {
     "id": 4,
-    "day_index": 4,
+    "day_index": 5,
     "day_has_started": false,
     "day_checked": false,
     "image_file_path": "https://via.placeholder.com/150",
@@ -51,7 +51,7 @@ export const calendarDays = [
   },
   {
     "id": 5,
-    "day_index": 5,
+    "day_index": 6,
     "day_has_started": false,
     "day_checked": false,
     "image_file_path": "https://via.placeholder.com/150",
@@ -61,7 +61,7 @@ export const calendarDays = [
   },
   {
     "id": 6,
-    "day_index": 6,
+    "day_index": 7,
     "day_has_started": false,
     "day_checked": false,
     "image_file_path": "https://via.placeholder.com/150",
@@ -71,7 +71,7 @@ export const calendarDays = [
   },
   {
     "id": 7,
-    "day_index": 7,
+    "day_index": 8,
     "day_has_started": false,
     "day_checked": false,
     "image_file_path": "https://via.placeholder.com/150",
@@ -81,7 +81,7 @@ export const calendarDays = [
   },
   {
     "id": 8,
-    "day_index": 8,
+    "day_index": 9,
     "day_has_started": false,
     "day_checked": false,
     "image_file_path": "https://via.placeholder.com/150",
@@ -91,7 +91,7 @@ export const calendarDays = [
   },
   {
     "id": 9,
-    "day_index": 9,
+    "day_index": 10,
     "day_has_started": false,
     "day_checked": false,
     "image_file_path": "https://via.placeholder.com/150",
@@ -101,7 +101,7 @@ export const calendarDays = [
   },
   {
     "id": 10,
-    "day_index": 10,
+    "day_index": 11,
     "day_has_started": false,
     "day_checked": false,
     "image_file_path": "https://via.placeholder.com/150",
@@ -111,7 +111,7 @@ export const calendarDays = [
   },
   {
     "id": 11,
-    "day_index": 11,
+    "day_index": 12,
     "day_has_started": false,
     "day_checked": false,
     "image_file_path": "https://via.placeholder.com/150",
@@ -121,7 +121,7 @@ export const calendarDays = [
   },
   {
     "id": 12,
-    "day_index": 12,
+    "day_index": 13,
     "day_has_started": false,
     "day_checked": false,
     "image_file_path": "https://via.placeholder.com/150",
@@ -131,7 +131,7 @@ export const calendarDays = [
   },
   {
     "id": 13,
-    "day_index": 13,
+    "day_index": 14,
     "day_has_started": false,
     "day_checked": false,
     "image_file_path": "https://via.placeholder.com/150",
@@ -141,7 +141,7 @@ export const calendarDays = [
   },
   {
     "id": 14,
-    "day_index": 14,
+    "day_index": 15,
     "day_has_started": false,
     "day_checked": false,
     "image_file_path": "https://via.placeholder.com/150",
@@ -151,7 +151,7 @@ export const calendarDays = [
   },
   {
     "id": 15,
-    "day_index": 15,
+    "day_index": 16,
     "day_has_started": false,
     "day_checked": false,
     "image_file_path": "https://via.placeholder.com/150",
@@ -161,7 +161,7 @@ export const calendarDays = [
   },
   {
     "id": 16,
-    "day_index": 16,
+    "day_index": 17,
     "day_has_started": false,
     "day_checked": false,
     "image_file_path": "https://via.placeholder.com/150",
@@ -171,7 +171,7 @@ export const calendarDays = [
   },
   {
     "id": 17,
-    "day_index": 17,
+    "day_index": 18,
     "day_has_started": false,
     "day_checked": false,
     "image_file_path": "https://via.placeholder.com/150",
@@ -181,7 +181,7 @@ export const calendarDays = [
   },
   {
     "id": 18,
-    "day_index": 18,
+    "day_index": 19,
     "day_has_started": false,
     "day_checked": false,
     "image_file_path": "https://via.placeholder.com/150",
@@ -191,7 +191,7 @@ export const calendarDays = [
   },
   {
     "id": 19,
-    "day_index": 19,
+    "day_index": 20,
     "day_has_started": false,
     "day_checked": false,
     "image_file_path": "https://via.placeholder.com/150",
@@ -201,7 +201,7 @@ export const calendarDays = [
   },
   {
     "id": 20,
-    "day_index": 20,
+    "day_index": 21,
     "day_has_started": false,
     "day_checked": false,
     "image_file_path": "https://via.placeholder.com/150",
@@ -211,7 +211,7 @@ export const calendarDays = [
   },
   {
     "id": 21,
-    "day_index": 21,
+    "day_index": 22,
     "day_has_started": false,
     "day_checked": false,
     "image_file_path": "https://via.placeholder.com/150",
@@ -221,7 +221,7 @@ export const calendarDays = [
   },
   {
     "id": 22,
-    "day_index": 22,
+    "day_index": 23,
     "day_has_started": false,
     "day_checked": false,
     "image_file_path": "https://via.placeholder.com/150",
@@ -231,7 +231,7 @@ export const calendarDays = [
   },
   {
     "id": 23,
-    "day_index": 23,
+    "day_index": 24,
     "day_has_started": false,
     "day_checked": false,
     "image_file_path": "https://via.placeholder.com/150",

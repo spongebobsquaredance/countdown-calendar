@@ -29,7 +29,7 @@ const DayList = ({ calendarDays }) => {
     // https://stackoverflow.com/questions/62918710/how-to-update-state-with-usestate-in-an-array-of-objects
 
     let updatedDaysArray = cal_days_array.map(item => {
-      if (item.id === dataIndexInt) {
+      if (item.id === (dataIndexInt - 1)) {
         return {...item, day_checked: !item.day_checked}
       }
       return item
@@ -40,12 +40,12 @@ const DayList = ({ calendarDays }) => {
 
   return (
     <ListWrapper>
-      {calendarDays.map((calendarDay, index) => 
+      {calendarDays.map((calendarDay) => 
       <li 
         key={calendarDay.id.toString()}
-        onClick={index <= calendarDayNumber ? (e) => toggleView(e.target.getAttribute("data-index")) : undefined}
+        onClick={calendarDay.day_index <= calendarDayNumber ? (e) => toggleView(e.target.getAttribute("data-index")) : undefined}
       >
-        <h2 data-index={index}>Day {index}</h2>
+        <h2 data-index={calendarDay.day_index}>Day {calendarDay.day_index}</h2>
         {cal_days_array[calendarDay.id].day_checked &&
         <>
           <img 
