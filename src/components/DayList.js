@@ -17,6 +17,10 @@ const ListWrapper = styled.ul`
   }
 `
 
+const DayNumber = styled.h2`
+  font-family: 'Cinzel', serif;
+`
+
 const DayList = ({ calendarDays }) => {
   const [cal_days_array, setDayChecked] = useState(calendarDays);
   const dateObj = new Date()
@@ -45,7 +49,7 @@ const DayList = ({ calendarDays }) => {
         key={calendarDay.id.toString()}
         onClick={calendarDay.day_index <= calendarDayNumber ? (e) => toggleView(e.target.getAttribute("data-index")) : undefined}
       >
-        <h2 data-index={calendarDay.day_index}>Day {calendarDay.day_index}</h2>
+        <DayNumber data-index={calendarDay.day_index}>Day {calendarDay.day_index}</DayNumber>
         {cal_days_array[calendarDay.id].day_checked &&
         <>
           <img 
