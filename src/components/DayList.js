@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
+import ListItem from './ListItem'
+
 const ListWrapper = styled.ul`
   display: grid;
   grid-column-gap: 8px;
@@ -17,10 +19,6 @@ const ListWrapper = styled.ul`
   }
 `
 
-const DayNumber = styled.h2`
-  font-family: 'Cinzel', serif;
-`
-
 const DayList = ({ calendarDays }) => {
   const [cal_days_array, setDayChecked] = useState(calendarDays);
   const dateObj = new Date()
@@ -28,9 +26,6 @@ const DayList = ({ calendarDays }) => {
 
   const toggleView = (dataIndex) => {
     let dataIndexInt = parseInt(dataIndex, 10)
-
-    // use javascript's array map functionality since that will not modify existing state, which react does not like, and it returns a new array. The process is to loop over the state's array and find the correct id. Update the done boolean. Then set state with the updated list
-    // https://stackoverflow.com/questions/62918710/how-to-update-state-with-usestate-in-an-array-of-objects
 
     let updatedDaysArray = cal_days_array.map(item => {
       if (item.id === (dataIndexInt - 1)) {
@@ -45,20 +40,20 @@ const DayList = ({ calendarDays }) => {
   return (
     <ListWrapper>
       {calendarDays.map((calendarDay) => 
-      <li 
-        key={calendarDay.id.toString()}
-        onClick={calendarDay.day_index <= calendarDayNumber ? (e) => toggleView(e.target.getAttribute("data-index")) : undefined}
-      >
-        <DayNumber data-index={calendarDay.day_index}>Day {calendarDay.day_index}</DayNumber>
-        {cal_days_array[calendarDay.id].day_checked &&
-        <>
-          <img 
-            src={calendarDay.image_file_path} 
-            alt={calendarDay.image_alt_text}
-          />
-          <a href={calendarDay.product_url}>{calendarDay.product_name}</a>
-        </>}
-      </li>)}
+        <ListItem 
+          dayChecked={cal_days_array[calendarDay.id].day_checked}
+          dayIndex={calendarDay.day_index}
+          dataIndex={calendarDay.day_index}
+          imgAltText={calendarDay.image_alt_text}
+          imgFilePath={calendarDay.image_file_path}
+          itemId={calendarDay.id.toString()}
+          key={calendarDay.day_index}
+          onClick={calendarDay.day_index <= calendarDayNumber ? (e) => toggleView(e.target.getAttribute("data-index")) : undefined}
+          productName={calendarDay.product_name}
+          productUrl={calendarDay.product_url}
+        />
+        )
+      }
     </ListWrapper>
   )
 }
