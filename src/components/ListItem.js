@@ -11,12 +11,11 @@ const ListItem = ({
   dataIndex, 
   imgAltText, 
   imgFilePath, 
-  itemId, 
   onClick, 
   productName, 
   productUrl }) => {
     return (
-      <li key={itemId} onClick={onClick}>
+      <li onClick={onClick}>
         <div>
           <DayNumber 
             data-index={dataIndex}

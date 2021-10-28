@@ -46,8 +46,7 @@ const DayList = ({ calendarDays }) => {
           dataIndex={calendarDay.day_index}
           imgAltText={calendarDay.image_alt_text}
           imgFilePath={calendarDay.image_file_path}
-          itemId={calendarDay.id.toString()}
-          key={calendarDay.day_index}
+          key={calendarDay.id.toString()}
           onClick={calendarDay.day_index <= calendarDayNumber ? (e) => toggleView(e.target.getAttribute("data-index")) : undefined}
           productName={calendarDay.product_name}
           productUrl={calendarDay.product_url}
