@@ -1,8 +1,29 @@
 import styled from 'styled-components'
 
-const DayNumber = styled.h2`
+const ContentContainer = styled.li`
+  overflow: hidden;
+  position: relative;
+`
+
+const ContentCover = styled.div`
+  background: #254649;
   font-family: 'Cinzel', serif;
-  color: ${props => props.isOpen ? "orange" : "black"};
+  font-size: 48px;
+  color: #e5cda7;
+  min-height: 200px;
+  top: 0;
+  width: 100%;
+  transition: transform 2s;
+  transform: ${props => props.isOpen ? "translateX(-75%)" : "translateX(0)"};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
+const Content = styled.div`
+  background: black;
+  position: absolute;
+  width: 100%;
 `
 
 const ListItem = ({ 
@@ -15,22 +36,21 @@ const ListItem = ({
   productName, 
   productUrl }) => {
     return (
-      <li onClick={onClick}>
-        <div>
-          <DayNumber 
-            data-index={dataIndex}
-            isOpen={dayChecked}
-          >Day {dayIndex}</DayNumber>
-        </div>
+      <ContentContainer>
         {dayChecked && 
-          <div>
+          <Content>
             <a href={productUrl}>
               <img src={imgFilePath} alt={imgAltText} />
               <p>{productName}</p>
             </a>
-          </div>
+          </Content>
         }
-      </li>
+        <ContentCover 
+          onClick={onClick} 
+          data-index={dataIndex}
+          isOpen={dayChecked}
+        >{dayIndex}</ContentCover>
+      </ContentContainer>
     )
 }
 

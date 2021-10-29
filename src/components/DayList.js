@@ -6,6 +6,7 @@ import ListItem from './ListItem'
 const ListWrapper = styled.ul`
   display: grid;
   grid-column-gap: 8px;
+  grid-row-gap: 8px;
   grid-template-columns: repeat(2, 1fr);
   list-style: none;
   margin: 0;
@@ -15,6 +16,7 @@ const ListWrapper = styled.ul`
   }
   @media (min-width: 1200px) {
     grid-column-gap: 2%;
+    grid-row-gap: 2%;
     grid-template-columns: repeat(6, 1fr);
   }
 `
